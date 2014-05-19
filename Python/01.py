@@ -5,8 +5,5 @@
 from operator import add
 from functools import reduce
 
-def getSum():
-    l = [i for i in range(1, 1000) if i % 3 == 0 or i % 5 == 0]
-    print(reduce(add, l))
-
-getSum()
+l = [i for i in range(1, 1000) if i % 3 == 0 or i % 5 == 0]
+print(reduce(add, l))
